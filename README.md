@@ -30,5 +30,5 @@ Se você tiver sugestões, correções ou melhorias para qualquer um dos projeto
 
 ## Licença
 
-Este repositório está licenciado sob a [licença do seu escolha]. Consulte o arquivo [LICENSE](link-para-o-arquivo-license) para obter mais informações.
+Este repositório está licenciado sob a [licença do seu escolha]. Consulte o arquivo [LICENSE](https://github.com/RaimundoAlexandre/Curso_de_python3/blob/main/LICENSE.txt) para obter mais informações.
 
