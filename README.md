@@ -20,9 +20,9 @@ Neste repositório, você encontrará uma coleção de projetos que criei como p
 
 Aqui estão alguns exemplos de projetos que você encontrará neste repositório:
 
-1. [Nome do Projeto 1](link-para-o-projeto-1): Breve descrição do projeto 1.
-2. [Nome do Projeto 2](link-para-o-projeto-2): Breve descrição do projeto 2.
-3. [Nome do Projeto 3](link-para-o-projeto-3): Breve descrição do projeto 3.
+1. [Caixa eletronico](https://github.com/RaimundoAlexandre/Curso_de_python3/blob/main/mundo%202/Caixa%20eletronico.py): Breve descrição do projeto 1.
+2. [Calculadora simples](https://github.com/RaimundoAlexandre/Curso_de_python3/blob/main/mundo%202/Calculadora%20simples.py): Breve descrição do projeto 2.
+3. [Jo ken po](https://github.com/RaimundoAlexandre/Curso_de_python3/blob/main/mundo%202/Jo%20ken%20po.py): Breve descrição do projeto 3.
 
 ## Contribuição
 
