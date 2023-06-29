@@ -44,8 +44,6 @@ print(f"O maior número é {n2} e o menor número é {n1}")
 
 """
 
-
-
 numeros = (randint(1, 5), randint(1, 5), randint(1, 5), randint(1, 5), randint(1, 5))
 
 n1 = min(numeros)
