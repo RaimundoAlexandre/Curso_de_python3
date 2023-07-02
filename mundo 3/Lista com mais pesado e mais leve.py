@@ -4,7 +4,7 @@ while True:
   dado = []  # Lista temporária para armazenar nome e peso de cada pessoa
   dado.append(str(input("Nome: ")))  # Solicita o nome da pessoa e adiciona à lista temporária
   dado.append(float(input("Peso: ")))  # Solicita o peso da pessoa e adiciona à lista temporária
-  pessoas.append(dado)  # Adiciona a lista temporária à lista de pessoas
+  pessoas.append(dado[:])  # Adiciona a lista temporária à lista de pessoas
 
   sair = str(input("Quer continuar? [S/N] ")).strip().upper()  # Verifica se o usuário deseja continuar
   if sair == 'N':
