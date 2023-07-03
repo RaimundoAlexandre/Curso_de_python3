@@ -30,5 +30,5 @@ for p in pessoas:
     p_menor.append(p[0])  # Adiciona o nome da pessoa com o mesmo menor peso à lista p_menor
 
 print(f"Foram cadastradas {total} pessoas")
-print(f"O maior peso foi {maior[1]} kg, das pessoas: {', '.join(p_maior)}")
-print(f"O menor peso foi {menor[1]} kg, das pessoas: {', '.join(p_menor)}")
+print(f"O maior peso foi {maior[1]} kg, de: {', '.join(p_maior)}")
+print(f"O menor peso foi {menor[1]} kg, de: {', '.join(p_menor)}")
