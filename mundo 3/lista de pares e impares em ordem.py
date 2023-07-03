@@ -37,6 +37,5 @@ for c in range(1, 8):
 numeros[0].sort()
 numeros[1].sort()
 
-
 print(f"Os pares são {numeros[0]}")
 print(f"Os ímpares são {numeros[1]}")
