@@ -10,7 +10,7 @@ while True:
     break
 
 print("=-=" * 10)
-print("No. NOME       MÉDIA")
+print(f"{'No.':<4}{'NOME':<10}{'MÉDIA':>6}")
 print("---" * 10)
 cont = 0
 for c in aluno:
