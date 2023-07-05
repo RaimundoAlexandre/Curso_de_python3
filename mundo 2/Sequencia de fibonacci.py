@@ -17,3 +17,15 @@ while cont <=n:
   f = n1 + n2
   cont += 1
 """
+"""
+valor = int(input("Digite um valor: "))
+n1 = 0
+n2 = 1
+print(f'{n1} {n2}',end=' ')
+for c in range(3, valor+1):
+  f = n1 + n2
+  print(f"{f}",end=' ')
+  n1 = n2
+  n2 = f
+  
+"""
