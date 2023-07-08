@@ -12,6 +12,7 @@ nomes = ['Cachorro', 'Programar', 'Estudar', 'Python', 'Curso', 'Gratis', 'Estud
 # Loop principal do jogo
 while len(nomes) > 0:
     print(f"Vou sortear uma dessas palavras {nomes}\nTente adivinhar qual palavra foi sorteada")
+    print("=-="*20)
     indice = randint(0, len(nomes) - 1)
     p = nomes[indice]
     nomes.pop(indice)
