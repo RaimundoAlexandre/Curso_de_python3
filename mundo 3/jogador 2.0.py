@@ -1,6 +1,6 @@
 jogador = {}
 
-jogador['nome'] = str(input("Nome: ")).strip().capitalize()
+jogador['nome'] = str(input("Nomes: ")).strip().capitalize()
 partidas = int(input(f"Quantas Partidas o {jogador['nome']} jogou? "))
 gols = []
 total = 0
