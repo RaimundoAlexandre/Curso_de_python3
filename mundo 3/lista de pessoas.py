@@ -1,45 +1,42 @@
-import pandas as pd
-
-mulheres = []
-acimaMedia = []
-sair = ''
-cont = 0
+listaP = list()
 soma = 0
-
-while sair != 'N':
-  acimaM = {}
-  feminino = {}
-  nome = str(input("Nome: ")).strip().capitalize()
-  cont += 1
-  sexo = str(input("Sexo:[F/M] ")).strip().upper()[0]
-  while sexo not in 'FM':
-    print("ERRO! responda apenas F ou M")
-    sexo = str(input("Sexo:[F/M] ")).strip().upper()[0]
-    
-  idade = int(input("Idade: "))
-  soma += idade
-  if sexo == 'F':
-    feminino['nome'] = nome
-    feminino['sexo'] = sexo
-    feminino['idade'] = idade
-    mulheres.append(feminino)
-    
-  media = (soma/cont)
-  if idade > media:
-    acimaM['nome'] = nome
-    acimaM['sexo'] = sexo
-    acimaM['idade'] = idade
-    acimaMedia.append(acimaM)
-  sair = str(input("Quer continuar?[S/N] ")).strip().upper()[0]
-  while sair not in 'SN':
-    print("ERRO! responda apenas S ou N")
-    sair = str(input("Quer continuar?[S/N] ")).strip().upper()[0]
-  print("=-="*10)
+while True:
+  pessoa = dict()
+  pessoa['nome'] = str(input("Nome: ")).strip().capitalize()
+  pessoa['sexo'] = str(input("Sexo:[F/M] ")).strip().upper()[0]
   
-print(f"O grupo tem {cont} pessoas")
-print(f"A media de idade é {media}") 
-tabelaMedia = pd.DataFrame(acimaMedia)
-print(f"lista de pessoas acima da media\n{tabelaMedia}")
-print("lista de mulheres")
-tabelaF = pd.DataFrame(mulheres)
-print(tabelaF)
+  while not pessoa['sexo'] in 'FM':
+    print("ERRO. Porfavor digite apenas F ou M")
+    pessoa['sexo'] = str(input("Sexo:[F/M] ")).strip().upper()[0]
+    
+  pessoa['idade'] = int(input("Idade: "))
+  listaP.append(pessoa)
+  soma += pessoa['idade']
+  
+  sair = str(input("Quer continuar?[S/N] ")).strip().upper()[0]
+  while not sair in 'SN':
+    print("ERRO. Porfavor digite apenas S ou N")
+    sair = str(input("Quer continuar?[S/N] ")).strip().upper()[0]
+  if sair == 'N':
+    break
+    
+print("=-="*10)
+media = soma/len(listaP)
+print(f"Foram cadastradas {len(listaP)} pessoas")
+print(f"A media de idade é {media}")
+print("As mulheres cadastradas foram ",end=' ')
+
+for p in listaP:
+  if p['sexo'] == 'F':
+    print(f"{p['nome']}", end=' ')
+print()
+print("=-="*10)
+print("↓ As pessoas acima da media foram ↓")
+for p in listaP:
+  if p['idade'] >= media:
+    print("   ",end='')
+    for k, v in p.items():
+      print(f"{k} = {v}; ", end ='')
+    print()
+print("=-="*10)
+print("<<< ENCERRADO >>>")
