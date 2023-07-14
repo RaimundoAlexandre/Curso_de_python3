@@ -3,6 +3,12 @@ from rich import print
 
 
 def maior(*num):
+    """
+    -> Analisa os valores passados e
+    mostra qual é o maior valor.
+    :param num: recebe os valores e os empacota
+    :return: sem retorno
+    """
     print("[blue]=-=[/]" * 10)
     print("Analisando os valores passados...")
     sleep(2)
@@ -18,9 +24,9 @@ def maior(*num):
         print("Valor invalido")
 
 
-maior(2, 9, 4, 5, 7, 1)
-maior(4, 7, 0)
-maior(1, 2)
-maior(6)
-maior(0)
-
+# maior(2, 9, 4, 5, 7, 1)
+# maior(4, 7, 0)
+# maior(1, 2)
+# maior(6)
+# maior(0)
+help(maior)
