@@ -1,3 +1,6 @@
+from rich import print
+
+
 def ficha(n='', g=0):
     """
     -> Verifica a ficha de um jogador e
@@ -8,11 +11,11 @@ def ficha(n='', g=0):
     :return: sem retorno
     """
     if n == '':
-        nick = "<desconhecido>"
+        nick = "<[red]desconhecido[/]>"
     else:
         nick = n
 
-    print(f"O jogador {nick} fez {g} gol(s) no campeonato.")
+    print(f"O jogador [blue]{nick}[/] fez {g} gol(s) no campeonato.")
 
 
 nome = ''

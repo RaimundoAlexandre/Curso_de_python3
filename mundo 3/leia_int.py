@@ -5,8 +5,8 @@ def leiaInt(msg):
     while True:
         print("[blue]==[/]"*20)
         try:
-            n = int(input(msg))
-            return n
+            a = int(input(msg))
+            return a
             break
         except ValueError:
             print("[red]ERRO! Digite um número inteiro válido[/]")
