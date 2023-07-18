@@ -23,3 +23,31 @@ def fatorial(f, show=False):
     else:
         fa = factorial(f)
         return fa
+
+
+def leiaInt(msg):
+    while True:
+        try:
+            res = int(input((f'{msg}')))
+            return res
+        except (ValueError, ):
+            print("Erro! Digite um valor inteiro valido")
+        except KeyboardInterrupt:
+            res = 0
+            return res
+            print("\nO usuario preferio não digitar esse número")
+            break
+
+
+def leiaFloat(msg):
+    while True:
+        try:
+            res = float(input((f'{msg}')))
+            return res
+        except ValueError:
+            print("Erro! Digite um valor Real valido")
+        except KeyboardInterrupt:
+            res = 0
+            return res
+            print("\nO usuario preferio não digitar esse número")
+            break

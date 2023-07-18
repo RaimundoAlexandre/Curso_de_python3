@@ -1,5 +1,5 @@
-from uteis import dado, moeda as md
+from uteis import leiaDinheiro, moeda as md
 
 
-p = dado("Digite o preço: R$")
-md.resumo(p, 80, 35)
+p = leiaDinheiro("Digite o preço: R$")
+md.resumo(p, 20, 12)

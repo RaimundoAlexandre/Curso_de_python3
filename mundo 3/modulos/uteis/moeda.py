@@ -74,6 +74,13 @@ def moeda(n):
 
 
 def resumo(v, n1, n2):
+    """
+    Exibe um resumo do valor informado, mostrando o valor original e algumas operações relacionadas.
+
+    :param v: Valor numérico a ser analisado.
+    :param n1: Porcentagem de aumento a ser aplicada.
+    :param n2: Porcentagem de redução a ser aplicada.
+    """
     print("--" * 16)
     print('        RESUMO DO VALOR')
     print("--" * 16)
